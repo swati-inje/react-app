@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 function App() {
   return (
