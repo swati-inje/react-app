@@ -1,45 +1,20 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css'; // Import the CSS file
+import Home from './components/Home'; // Import the Home component
+import LandingPage from './components/LandingPage'; // Import the LandingPage component
 
 function App() {
   return (
-    <div >
-     <div className="outerDiv">
-      <div>
-      <h2>Get Started Now</h2>
-      <h6>Enter your credentials to access your account</h6>
-
-      <div className="sideBySide">
-      <button className="topButton">Login with Google</button>
-      <button className="topButton">Login with Apple</button>
-      </div>
-      {/* Line */}
-      <div className="lineFlex">
-        <div className="line">
-        </div>
-        <span>or</span>
-        <div className="line">
-        </div>
-      </div>
-
-      <form>
-        <label>Name</label><br/>
-        <input type="text" id="name" placeholder="Enter your name"/><br/><br/>
-        <label>Email address</label><br/>
-        <input type="email" id="email" placeholder="Enter your email address"/><br/><br/>
-        <label>Password</label><span className="forgotPassword">Forgot Password?</span><br/>
-        <input type="password" id="password" placeholder="Enter your password"/><br/><br/>
-        <input type="checkbox" id="agree" /><label for="agree"> I agree to the Terms and Policy</label><br/><br/>
-        <button className="loginBtn"><h2>Login</h2></button> <br/><br/>
-        <label>Have an account? <span className="signIn">Sign in</span></label>
-      </form>
-      </div>
-      <div>
-        <img src="https://images.pexels.com/photos/3309884/pexels-photo-3309884.jpeg?auto=compress&cs=tinysrgb&w=600" className="imageTag" alt="puppy-image" />
-      </div>
-     </div>
-    </div>
+    <Router>
+      <Routes>
+        {/* Route for Home component */}
+        <Route path="/" element={<Home />} />
+        {/* Route for LandingPage component */}
+        <Route path="/landingpage" element={<LandingPage />} />
+      </Routes>
+    </Router>
   );
-
 }
 
 export default App;

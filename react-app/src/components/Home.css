@@ -1,0 +1,86 @@
+body{
+    background-color:#F5F0F3
+  }
+  
+  .outerDiv{
+    margin: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .sideBySide{
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .topButton{
+    /* Top Right Bottom Left Padding */
+    padding: 10px 30px 10px 30px; 
+    margin: 0px 10px 0px 10px;
+    color: #000000;
+    font-weight: 600;
+    background-color: #FAFAFA;
+    border: 1px solid transparent;
+    border-radius: 10px;
+  }
+  
+  .lineFlex{
+    display: flex;
+    align-items: center;
+  }
+  
+  .line{
+    background-color: #FAFAFA;
+    width: 200px;
+    height: 2px;
+    margin: 2px
+  }
+  
+  label{
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+  
+  input{
+    background-color: #FAFAFA;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+  }
+  
+  .forgotPassword{
+    float: right;
+    font-size: 0.67em;
+    color: #674960;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .loginBtn{
+    background-color: #674960;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 50%;
+    cursor: pointer;
+  }
+  
+  
+  .signIn{
+    color: #674960;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .imageTag{
+    width: 100%;
+    height: 600px;
+  }
+
+  .homeInput{
+    width: 100% !important;
+  }
